@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,200;0,400;0,600;1,600&display=swap');
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+input,
+p,
+a {
+  font-family: "Urbanist";
+  margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+li {
+  font-size: 1.4em;
+  line-height: 40px;
+  list-style-type: none;
+}
+a,
+a:hover,
+a:focus {
+  color: inherit;
+}
+
+body {
+  color: #000;
+  overflow-x: hidden;
+}
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row>[class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-fluid,
+.container {
+  max-width: 1200px;
+}
+
+.card-container {
+  padding: 100px 0px;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
+
+
+.home,
+.services {
+  display: flex;
+  height: 60vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.cards h1 {
+  margin: 30px 0px 45px 0px;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.info_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 30px 0;
+  padding-bottom: 10px;
+  border-bottom: rgba(0, 81, 159, 0.2) 1px solid;
+}
+
+.info_row i {
+  margin-right: 10px;
+}
+
+.link_to_company {
+  color: #00519f;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+
+
+.ansvar_img {
+  height: 150px;
+  width: 150px;
+  border: 8px solid #eee;
+  margin: auto;
+}
+
+.job_sidebar {
+  padding: 0px 20px;
+}
+
+.sidebar_content {
+  background-color: #fff3f5;
+  padding: 45px 30px;
+}
+
+
+.card {
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+}
+
+.job_page h3 {
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.name {
+  font-size: 20px;
+  margin-bottom: 6px;
+  padding-top: 30px
+}
+
+ul {
+  padding-inline-start: 30px;
+}
+
+
+.jobb_content li:before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  vertical-align: -.125em;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='rgb(91,192,222)' class='bi bi-check-lg' viewBox='0 0 16 16'><path d='M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z'/></svg>");
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+  width: 20px;
+  height: 12px;
+  background-size: 1.6rem 1.6rem;
+  width: 20px;
+  height: 40px;
+  left: 21px;
+  margin-top: 13px;
+}
+
+.about-section {
+  background-color: #fff3f5;
+  padding: 40px 60px;
+  margin-top: 30px;
+}
+
+.jobb_content h2 {
+  margin-bottom: 20px;
+}
+
+.jobb_content h2:nth-child(3) {
+  margin-top: 20px;
+}
+
+.job_title {
+  margin: auto;
+  position: absolute;
+  top: 270px;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+.job_title h1 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 2px 2px 1px #666;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 81, 159, 0.2);
+}
+
+.job_container {
+  display: block;
+  position: relative;
+}
+
+.services {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  color: #fff;
+  font-size: 100px;
+}
+
+.products {
+  background-image: url('/images/img-1.jpg');
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+
+.job_page_content {
+  padding: 80px 0px;
+}
+
+.job_page_content p {
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.job_page_content i {
+  font-size: 1.6rem;
+  color: #00519f;
+}
+
+.cards-card-4 {
+  background-color: #FFF;
+  border-radius: 25px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  margin: 30px auto;
+  height: 100%;
+}
+
+.cards-card-4 .header-image {
+  transition: all 0.25s linear;
+  height: 300px;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.jobb_content p {
+  font-weight: 400;
+  line-height: 190%;
+}
+
+.jobb_content {
+  padding: 40px 0px;
+}
+
+.btn {
+
+  border-radius: 23px;
+}
+
+.btn_row button:hover,
+.job_page_content button:hover {
+  text-decoration: none !important;
+  background-color: palevioletred;
+  color: #fff;
+}
+
+
+
+.btn_row a:hover {
+  text-decoration: none !important;
+}
+
+.cards-card-4 .cards-content {
+  position: relative;
+  padding: 37px;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  height: 560px;
+  overflow: auto;
+}
+
+.cards-card-4 .cards-content p {
+  margin-bottom: 40px;
+  overflow: auto;
+}
+
+.cards-card-4 .cards-name h3 {
+  font-weight: bold;
+  left: 0px;
+  right: 0px;
+  top: -38px;
+  color: #000;
+  font-size: 29px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  font-weight: 600;
+}
+
+.cards-card-4 .cards-name p {
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.cards-card-4 .cards-description {
+  color: #000;
+  font-size: 18px;
+  line-height: 30px;
+  flex-grow: 1;
+}
+
+.cards-card-4 .cards-overview {
+  padding: 15px 0px;
+}
+
+.cards-card-4 .cards-overview p {
+  font-size: 10px;
+  font-weight: 600;
+  color: #777;
+}
+
+.cards-card-4 .cards-overview h4 {
+  color: #273751;
+  font-weight: bold;
+}
+
+.cards-card-4 .cards-content::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  top: -9px;
+  left: 0px;
+  right: 0px;
+  background-color: #FFF;
+  z-index: 0;
+  transform: skewY(3deg);
+}
+
+.cards-card-4:hover .header-image {
+  transform: rotate(5deg) scale(1.1, 1.1);
+  filter: brightness(110%);
+}
+
+
+.kontakt p {
+  margin-left: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .cards h1 {
+    margin: 0px 0px 45px 0px;
+    padding: 30px;
+  }
+
+  .cards {
+    background: #fff;
+    padding: 0rem !important;
+  }
+
+ 
+
+  .job_title h1 {
+    font-size: 2rem;
+  }
+
+  .job_page_content {
+    padding: 80px 40px;
+  }
+
+  .about-section {
+    padding: 40px 15px;
+    margin-top: 30px;
+  }
+
+  .jobb_content li:before {
+    display: none;
+  }
+
+  li {
+    list-style: disc outside none !important;
+  }
+
+
+
+  .jobb_content li::marker {
+    color: black;
+    font-size: 1.2em;
+  }
+
+  .jobb_content {
+    flex-direction: column-reverse;
+
+  }
+
+  .jobb_content .col-md-8 {
+    padding: 0px;
+  }
+
+  .job_sidebar {
+    padding: 0px;
+    margin-bottom: 40px;
+  }
+
+  .jobb_content {
+    padding: 0px 0px;
+  }
+
+  .job_page_content p {
+    margin-left: 0px;
+  }
+
+  .info_row p{
+    margin-left: 10px;
+  }
+}
