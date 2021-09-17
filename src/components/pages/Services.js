@@ -65,25 +65,25 @@ export default function Services({ text }) {
           <div className="col-md-4 job_sidebar">
             <div className="sidebar_content">
               <div className="info_row">
-                <i calssName="bi bi-geo-alt-fill"></i>
+                <i className="bi bi-geo-alt-fill"></i>
                 <h4>Adress: </h4>
 
                 <p>  {adress}</p>
               </div>
               <div className="info_row">
-                <i calssName="bi bi-globe"></i>
+                <i className="bi bi-globe"></i>
                 <h4>Industry: </h4>
 
                 <p>  {ad.company.industry}</p>
               </div>
               <div className="info_row">
-                <i calssName="bi bi-file-text"></i>
+                <i className="bi bi-file-text"></i>
                 <h4>Employment Type: </h4>
 
                 <p>  {ad.employment_type}</p>
               </div>
               <div className="info_row">
-                <i calssName="bi bi-shield-check"></i>
+                <i className="bi bi-shield-check"></i>
                 <h4>Experience: </h4>
 
                 <p>  {ad.experience}</p>
