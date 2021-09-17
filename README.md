@@ -1,4 +1,4 @@
-# A Simple job Listning 
+# A Simple job Listing app
 <br><br>
 ## Installation:
  - yarn install
