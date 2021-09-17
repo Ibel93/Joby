@@ -1,6 +1,8 @@
+# A Simple job Listning 
+<br><br>
+## Installation:
+ - yarn install
+ - yarn start
+ - visit browser at http://localhost:3000/
 
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-
+## I hope you like it ! 
