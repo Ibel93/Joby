@@ -2,21 +2,21 @@ import React from "react";
 import "./Cards.css";
 import CardItem from "./CardItem";
 
-function Cards({ jobs }) {
-  var ads = {};
-  if (jobs.length > 0) {
-    ads = jobs.map((el) => {
+function Cards(props) {
+  var ads = null;
+  if (props.jobs.length > 0 ) {
+    ads = props.jobs.map((el) => {
       return (
         <CardItem
           src="images/img-3.jpg"
-          text="Set Sail in the Atlantic Ocean visiting Uncharted Waters"
+          text="Sailing in the Atlantic Ocean"
           label={el.title}
           ad={el}
           path="/jobb"
         />
       );
     });
-  } else {
+  } else if (!props.loading){
     ads = (
       <div
         style={{
@@ -37,6 +37,14 @@ function Cards({ jobs }) {
       <div className="container-fluid">
         <div id="wrraper" className="row">
           {ads}
+          {props.loading && (
+            <div class="lds-ring">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          )}
         </div>
       </div>
     </div>

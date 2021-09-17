@@ -20,6 +20,7 @@ function ScrollToTop() {
 function App() {
   // fetch data in Json format
   const [data, setData] = useState([]);
+  const [loading, setLoader] = useState(true);
   const getData = () => {
     fetch(
       "https://feed.jobylon.com/feeds/7d7e6fd12c614aa5af3624b06f7a74b8/?format=json",
@@ -28,7 +29,7 @@ function App() {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
-        mode: "no-cors",
+        mode: "cors",
       }
     )
       .then(function (response) {
@@ -39,14 +40,17 @@ function App() {
         }
       })
       .then(function (myJson) {
-        console.log(myJson);
-        setData(myJson);
+       // console.log(myJson);
+       setData(myJson);
+       setLoader(false);
       })
       .catch((error) => {
         console.log(error);
+        setLoader(false);
       });
   };
   useEffect(() => {
+
     getData();
   }, []);
 
@@ -58,7 +62,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route path="/" exact component={Home}>
-            <Home jobs={data} />
+            <Home jobs={data} loading={loading}/>
           </Route>
           <Route path="/jobb">
             <Services text={"If I change it"} />

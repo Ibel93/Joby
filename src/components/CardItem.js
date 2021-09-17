@@ -11,7 +11,6 @@ function CardItem(props) {
   var location = props.ad.locations[0].location.city
     ? props.ad.locations[0].location.city
     : props.ad.locations[0].location.text;
-  console.log(location);
   return (
     <>
       <div className="col-lg-4 col-md-6 col-sm-12">
