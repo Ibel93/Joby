@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Services from "./components/pages/Services";
 import { useLocation } from "react-router-dom";
 
-
 //Function to restore scroll prositon
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -29,15 +28,22 @@ function App() {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
-        mode: "cors",
+        mode: "no-cors",
       }
     )
       .then(function (response) {
-        return response.json();
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error('Something went wrong');
+        }
       })
       .then(function (myJson) {
         console.log(myJson);
         setData(myJson);
+      })
+      .catch((error) => {
+        console.log(error);
       });
   };
   useEffect(() => {
@@ -48,7 +54,7 @@ function App() {
   return (
     <>
       <Router>
-      <ScrollToTop />
+        <ScrollToTop />
         <Navbar />
         <Switch>
           <Route path="/" exact component={Home}>

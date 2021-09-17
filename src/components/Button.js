@@ -20,7 +20,7 @@ export const Button = ({
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
   return (
-    <Link activeClass="active"
+    <Link activecalssName="active"
     to="jobs"
     spy={true}
     smooth={true}
